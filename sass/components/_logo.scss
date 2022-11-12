@@ -1,0 +1,47 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
+//   Logo in header
+.header__logo {
+  @extend %link;
+  padding: 16px 0;
+}
+.header__logo--color {
+  color: var(--black-text-color);
+}
+
+// Logo in footer
+.footer__logo {
+  @extend %link;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__logo--color {
+  color: var(--white-color);
+}
+
+
+
+// .logo {
+//   font-family: "Raleway", sans-serif;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--brand-color);
+// }
+
+//   Logo in header
+// .header__logo {
+//   @extend %link;
+//   padding: 25px 0;
+// }
+
+

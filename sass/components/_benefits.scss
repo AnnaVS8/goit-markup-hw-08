@@ -1,0 +1,68 @@
+// Секція переваг після героя
+.benefits__list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.benefits__items {
+  width: 100%;
+}
+
+.benefit__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background-color: var(--section-bg-color);
+}
+.benefits__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits__text {
+  color: var(--primary-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+
+// .benefits__list {
+//   @extend %list;
+//   display: flex;
+//   align-items: baseline;
+//   gap: 30px;
+//   width: 1170px;
+// }
+// .benefits__items {
+//   width: 270px;
+// }
+// .benefit__icon {
+//   background-color: var(--section-bg-color);
+//   padding: 25px 100px;
+//   align-items: center;
+//   margin-bottom: 30px;
+// }
+// .benefits__title {
+//   display: inline-block;
+//   margin-bottom: 10px;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-align: left;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+// .benefits__text {
+//   color: var(--primary-color);
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+// }
