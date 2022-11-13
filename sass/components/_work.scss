@@ -1,12 +1,10 @@
-.work{
+.work {
+  padding-top: 0;
+
+  @media screen and (max-width: $tablet-max) {
     display: none;
+  }
 }
-
-
-
-// .work {
-//   padding-top: 0;
-// }
 // .work__title {
 //   margin-bottom: 50px;
 // }

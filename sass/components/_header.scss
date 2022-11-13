@@ -7,8 +7,14 @@
   cursor: pointer;
   padding: 0;
   border: none;
-  background-color: var(--white-color);
+  background-color: transparent;
   fill: var(--black-text-color);
+  transition: fill 250ms var(--distribution-time);
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
 
   @media screen and (min-width: $tablet) {
     display: none;

@@ -1,5 +1,5 @@
 .hero {
-  //   width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -9,20 +9,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  //   @media screen and (min-width:$mobile){
-  //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
-  //   }
-  @media screen and (min-width: $tablet) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 577px) and (max-width: $tablet) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-tablet@2x.jpg);
+    }
   }
-  @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    // background-size: contain;
-  }
-  @media screen and (min-width: $desktop),
-    (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) /*dots per inch точок на один дюйм*/ {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero@2x.jpg);
+
+  @media screen and (min-width: $desktop-min) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero@2x.jpg);
+    }
   }
 }
 
@@ -40,11 +44,11 @@
 }
 
 .hero__btn {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px 24px;
-  }
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 24px;
+}
 
 // .hero {
 //   width: 1600px;
