@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import './utils/breakpoints';
+@import "./utils/breakpoints";
 @import "./utils/placeholders";
 @import "./utils/base";
 @import "./utils/mixin";
@@ -12,8 +12,8 @@
 @import "./components/hero";
 @import "./components/logo";
 @import "./components/mailing";
-@import './components/mobile-menu';
-@import "./components/modal";
+@import "./components/mobile-menu";
+@import "./components/modal/modal.scss";
 @import "./components/portfolio";
 @import "./components/social";
 @import "./components/team";

@@ -1,0 +1,72 @@
+.checkbox {
+  position: relative;
+  @include centeredFlex();
+  margin-bottom: 30px;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: relative;
+}
+.checkbox__icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  fill: var(--white-color);
+  fill-opacity: 0;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: background-color 250ms var(--distribution-time), border-color 250ms var(--distribution-time),
+    fill-opacity 250ms var(--distribution-time);
+
+  @media screen and (max-width: $mobile-less) {
+    left: 3px;
+  }
+  @media screen and(min-width:$tablet) {
+    left: 13px;
+  }
+}
+
+.checkbox__input:focus-visible + .checkbox__icon {
+  border-color: var(--brand-color);
+}
+.checkbox__input:checked + .checkbox__icon {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  fill-opacity: 1;
+}
+.checkbox__label {
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: calc(14px / 12px);
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $mobile-less) {
+    font-size: calc(5px + 7 * (100vw / 480));
+    margin-left: 10px;
+  }
+  @media screen and(min-width:$tablet) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.checkbox__terms {
+  color: var(--brand-color);
+}
+// кнопка Відправити
+.form__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+
+  @media screen and (max-width: $mobile-less) {
+    font-size: calc(10px + 6 * (100vw / 480));
+    padding: 10px 40px;
+  }
+}
