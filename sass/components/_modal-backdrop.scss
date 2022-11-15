@@ -31,9 +31,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--distribution-time);
 
-  @media screen and (max-width: $mobile-less) {
+  @media (max-width: 767px) {
     width: calc(100vw * 0.9);
   }
+
   @media screen and (min-width: $tablet) {
     width: 528px;
   }
@@ -42,7 +43,9 @@
 // Модальна кнопка закриття
 .modal__btn {
   position: absolute;
-  @include centeredFlex();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   top: 8px;
   right: 8px;

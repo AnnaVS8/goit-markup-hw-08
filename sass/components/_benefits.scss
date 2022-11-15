@@ -9,8 +9,14 @@
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    // align-items: baseline;
-    // width: 1170px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .benefits__items {
@@ -18,7 +24,6 @@
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
   }
-  // width: 270px;
 }
 
 .benefit__icon {
@@ -26,7 +31,6 @@
   padding: 25px 0;
   margin-bottom: 30px;
   background-color: var(--section-bg-color);
-  // padding: 25px 100px;
 }
 .benefits__title {
   display: block;

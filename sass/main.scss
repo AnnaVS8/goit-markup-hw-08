@@ -13,7 +13,9 @@
 @import "./components/logo";
 @import "./components/mailing";
 @import "./components/mobile-menu";
-@import "./components/modal/modal.scss";
+@import "./components/_modal-backdrop";
+@import './components/modal-check';
+@import './components/modal-form';
 @import "./components/portfolio";
 @import "./components/social";
 @import "./components/team";

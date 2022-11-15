@@ -23,16 +23,3 @@
     fill: var(--white-color);
   }
 }
-// .social__link {
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     @include centeredFlex();
-//     fill: var(--secondary-color);
-//     transition: fill 250ms var(--distribution-time), background-color 250ms var(--distribution-time);
-  
-//     &:hover,
-//     &:focus {
-//       fill: var(--white-color);
-//       background-color: var(--brand-color);
-//     }

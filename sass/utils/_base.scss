@@ -39,6 +39,9 @@ img {
 .section {
   padding: 60px 0;
   color: var(--title-text-color);
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .container {
@@ -46,14 +49,9 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-  }
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    margin: 0;
+ 
   }
 }
 
@@ -63,28 +61,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }
-
-// .container {
-//   width: 100%;
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-// }
-
-// .section {
-//   padding: 94px 0;
-//   color: var(--title-text-color);
-// }
 
 .current {
   color: var(--brand-color);
 }
-
-// .title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.17;
-//   letter-spacing: 0.03em;
-//   text-align: center;
-// }
