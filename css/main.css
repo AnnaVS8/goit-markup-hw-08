@@ -78,7 +78,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    margin: 0;
+    width: 1200px;
   }
 }
 
@@ -129,9 +129,9 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -320,6 +320,11 @@ img {
 @media screen and (min-width: 1000px) {
   .footer__block {
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    margin-left: auto;
   }
 }
 
@@ -614,6 +619,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 640px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     display: block;
@@ -824,7 +834,7 @@ img {
   padding: 11px;
   border: none;
   background-color: var(--white-color);
-  fill: var(---title-text-color);
+  fill: var(--title-text-color);
   -webkit-transition: fill 250ms var(--distribution-time), background-color 250ms var(--distribution-time);
   transition: fill 250ms var(--distribution-time), background-color 250ms var(--distribution-time);
 }
@@ -900,7 +910,7 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 10px;
+  gap: 5px;
 }
 
 .mobile-menu__net {
@@ -912,11 +922,9 @@ img {
   color: var(--brand-color);
 }
 
-.mobile-menu__line {
-  margin-left: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mobile-menu__line:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 5px;
 }
 
 .backdrop {
@@ -1276,6 +1284,9 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__list {
     margin-top: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1475,12 +1486,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   gap: 30px;
 }
 

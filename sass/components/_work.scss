@@ -10,7 +10,8 @@
 }
 .work__list {
   @extend %list;
-  @include centeredFlex();
+  display: flex;
+  justify-items: center;
   gap: 30px;
 }
 .work__img {

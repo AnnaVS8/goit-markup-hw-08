@@ -14,9 +14,7 @@
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
     align-items: baseline;
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
   }
 }
 .benefits__items {

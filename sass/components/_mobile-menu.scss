@@ -27,7 +27,7 @@
   padding: 11px;
   border: none;
   background-color: var(--white-color);
-  fill: var(---title-text-color);
+  fill: var(--title-text-color);
   transition: fill 250ms var(--distribution-time), background-color 250ms var(--distribution-time);
 
   &:hover,
@@ -95,7 +95,7 @@
 }
 .mobile-menu__networks {
   @include centeredFlex($justify: flex-start);
-  gap: 10px;
+  gap: 5px;
 }
 
 .mobile-menu__net {
@@ -106,8 +106,7 @@
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
-.mobile-menu__line {
-  margin-left: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+.mobile-menu__line:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 5px;
 }
