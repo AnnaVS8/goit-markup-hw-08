@@ -96,7 +96,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__items">
+                <div class="portfolio__items portfolio__items--size">
                   <h2 class="portfolio__title">Технокряк</h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div>
@@ -126,7 +126,9 @@
                   </div>
                 </div>
                 <div class="portfolio__items">
-                  <h2 class="portfolio__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                  <h2 class="portfolio__title portfolio__title--break">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
                   <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
@@ -410,5 +412,50 @@
         </form>
       </div>
     </footer>
+
+    <!-- Modal menu -->
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="mobile-menu__close js-close-menu">
+        <svg width="19" height="19" aria-label="Кнопка мобільного меню">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contacts">
+        <li>
+          <a class="mobile-menu__phone" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li>
+          <a class="mobile-menu__mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__networks">
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__net" href="#">Instagram <span class="mobile-menu__line"></span></a>
+        </li>
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__net" href="#">Twitter <span class="mobile-menu__line"></span></a>
+        </li>
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__net" href="#">Facebook <span class="mobile-menu__line"></span></a>
+        </li>
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__net" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

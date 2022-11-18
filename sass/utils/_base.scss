@@ -49,7 +49,12 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 
-
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
   @media screen and (min-width: $desktop) {
     width: 1200px;
   }

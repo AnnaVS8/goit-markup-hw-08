@@ -7,6 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
+  overflow: scroll;
   transition: opacity 250ms var(--distribution-time), visibility 250ms var(--distribution-time);
 }
 .backdrop.is-hidden {
@@ -19,9 +20,9 @@
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 350px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 450px;
   min-height: 581px;
   padding: 40px;
@@ -37,6 +38,10 @@
 
   @media screen and (min-width: $tablet) {
     width: 528px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

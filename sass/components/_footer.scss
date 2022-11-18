@@ -41,6 +41,9 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+  }
 }
 .footer__link,
 .footer__callback {

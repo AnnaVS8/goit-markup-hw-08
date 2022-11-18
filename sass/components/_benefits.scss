@@ -1,4 +1,9 @@
 // Секція переваг після героя
+.container.benefits {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    padding: 0;
+  }
+}
 .benefits__list {
   @extend %list;
   display: flex;
