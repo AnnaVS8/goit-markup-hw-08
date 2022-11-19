@@ -1013,7 +1013,7 @@ img {
   transition: transform 250ms var(--distribution-time);
   transition: transform 250ms var(--distribution-time), -webkit-transform 250ms var(--distribution-time);
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .modal {
     width: 90vw;
   }
